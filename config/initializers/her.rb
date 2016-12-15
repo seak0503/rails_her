@@ -1,4 +1,5 @@
-Her::API.setup url: "http://172.16.48.234/rails/" do |c|
+RAILS_GARAGE = Her::API.new
+RAILS_GARAGE.setup url: "http://localhost:3000/v1" do |c|
   # Request
   c.use Faraday::Request::UrlEncoded
 
